@@ -10,8 +10,12 @@ export default defineConfig({
   server: {
     allowedHosts: true,
   },
+  base: "/earth-seal/",
+
   build: {
     chunkSizeWarningLimit: 5000,
+    // GitHub Pages can publish from /docs on main branch
+    outDir: "docs",
   },
   resolve: {
     alias: {

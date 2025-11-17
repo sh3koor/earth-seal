@@ -1,12 +1,7 @@
 {
-  "extends": "./tsconfig.node.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
-    "types": ["vite/client", "./worker-configuration.d.ts"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "noEmit": true
   },
-  "include": ["src/worker"]
+  "include": []
 }
