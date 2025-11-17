@@ -13,6 +13,7 @@ import {
 import { useAuth } from "@/react-app/context/AuthContext";
 import { useTheme } from "@/react-app/context/ThemeContext";
 import { useState } from "react";
+import EarthSeal from "../../shared/images/EarthSeal.png";
 
 interface SidebarProps {
   alertsCount: number;
@@ -59,11 +60,7 @@ export default function Sidebar({ alertsCount }: SidebarProps) {
           <div className="flex items-center justify-between">
             {!isCollapsed && (
               <div className="flex items-center space-x-3">
-                <img
-                  src="/src/shared/images/Earth Seal.png"
-                  alt="Earth Seal"
-                  className="w-14 h-14"
-                />
+                <img src={EarthSeal} alt="Earth Seal" className="w-14 h-14" />
                 <div>
                   <h1 className="text-xl font-bold">Earth Seal</h1>
                   <p className="text-emerald-200 dark:text-gray-400 text-xs">

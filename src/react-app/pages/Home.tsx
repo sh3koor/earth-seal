@@ -13,6 +13,7 @@ import ComplianceStatus from "@/react-app/components/ComplianceStatus";
 import RealTimeChart from "@/react-app/components/RealTimeChart";
 import AIInsights from "@/react-app/components/AIInsights";
 import { useEnhancedRealTimeData } from "@/react-app/hooks/useEnhancedRealTimeData";
+import EarthSeal from "../../shared/images/EarthSeal.png";
 
 export default function Home() {
   const { sites, alerts, compliance, chartData, overallScore } =
@@ -52,11 +53,7 @@ export default function Home() {
       <div className="bg-gradient-to-r from-emerald-900 to-teal-800 dark:from-gray-900 dark:to-gray-800 text-white rounded-xl p-8 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex items-center space">
-            <img
-              src="/src/shared/images/Earth Seal.png"
-              alt="Earth Seal"
-              className="w-32 h-32"
-            />
+            <img src={EarthSeal} alt="Earth Seal" className="w-32 h-32" />
             <div>
               <h1 className="text-4xl font-bold mb-2">Earth Seal</h1>
               <p className="text-emerald-200 dark:text-gray-300 text-lg">
