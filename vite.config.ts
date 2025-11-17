@@ -16,6 +16,8 @@ export default defineConfig({
     chunkSizeWarningLimit: 5000,
     // GitHub Pages can publish from /docs on main branch
     outDir: "docs",
+    assetsDir: "assets",
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
